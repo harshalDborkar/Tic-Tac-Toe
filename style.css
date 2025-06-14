@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+*{
+    padding: none;
+    margin: none;
+    font-family: 'Roboto', sans-serif;
+    /* background: url(Art\ Render\ GIF\ by\ time.gif);
+    background-size: cover;
+    color: white; */
+}
+
+.gameGrid{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.game{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+
+}
+
+.box{
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    font-weight: 900;
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.gameInfo{
+    font-family: "Freckle Face", system-ui;
+    color: black;
+    font-weight: 500;
+    font-size: 5vw;
+    text-align: center;
+    margin: 10px 0 10px 0;
+
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.bt0{
+    border-top: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
