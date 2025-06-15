@@ -102,7 +102,7 @@ button:hover{
     padding: 25px;
     border-radius: 5px ;
     right: 0;
-    width: 10vw;
+    width: 15vw;
     height: 5vw;
 }
 
@@ -110,6 +110,8 @@ button:hover{
     font-size: 2vw;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    width: 20vw;
+    text-align: center;
 }
 .br0{
     border-right: 0;
