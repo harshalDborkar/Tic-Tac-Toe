@@ -57,6 +57,10 @@ button{
     margin: 15px 0 0 0 ;
 }
 
+button:hover{
+    background-color: rgba(159, 159, 159, 0.432);
+    cursor: pointer;
+}
 .box:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
