@@ -3,6 +3,8 @@ let turn = "X";
 const msg = document.querySelector(".msg");
 let boxes = document.querySelectorAll(".box");
 
+const celebrate = document.querySelector(".celebrate");
+
 const changeTurn = ()=>{
     return turn === "X" ? "O" : "X";
 }
@@ -23,6 +25,7 @@ const checkWin = ()=>{
         // console.log(boxes[e[0]].innerText);
         if(boxes[e[0]].innerText != "" && (boxes[e[0]].innerText === boxes[e[1]].innerText && boxes[e[1]].innerText === boxes[e[2]].innerText)){
             msg.innerText = `${boxes[e[0]].innerText} won the game`;
+            celebrate.classList.remove("hide");
             turn = "";
         }
     })
@@ -54,5 +57,6 @@ reset.addEventListener("click",()=>{
         box.innerText = "";
         turn = "X";
         msg.innerText = "Turn of X";
+        celebrate.classList.add("hide");
     });
 });
